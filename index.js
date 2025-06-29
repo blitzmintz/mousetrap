@@ -117,7 +117,7 @@ function squareSelected(e) {
                             guessList.push(e.target.id);
                             message.textContent = 'that was a cheese :)';
                             e.target.style.setProperty('background-color', 'rgba(120,131,175,0.95)');
-                            e.target.style.backgroundImage = 'url(/assets/cheese2.webp)';
+                            e.target.style.backgroundImage = 'url(assets/cheese2.webp)';
                             e.target.style.backgroundSize = 'cover';
                             playSound(successSound);
                             successCount++;
@@ -138,7 +138,7 @@ function squareSelected(e) {
                             message.textContent = 'that was a trap :(';
                             e.target.style.setProperty('background-color', 'rgba(144,92,85,0.95)');
                             playSound(failSound);
-                            e.target.style.backgroundImage = 'url(/assets/trap.png)';
+                            e.target.style.backgroundImage = 'url(assets/trap.png)';
                             e.target.style.backgroundSize = 'contain';
                             failCount++;
                             if (failCount === 2) {
@@ -156,6 +156,6 @@ function squareSelected(e) {
     }
 }
 function playSound(soundType) {
-    const clonedAudio = soundType.cloneNode(); // Creates a new, independent copy
+    const clonedAudio = soundType.cloneNode();
     clonedAudio.play();
 }
