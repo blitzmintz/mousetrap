@@ -6,6 +6,7 @@ body {
     width: auto;
     height: auto;
     background-image: url("assets/cat.png");
+
     background-position: right;
     background-repeat: space;
     background-size: 500px;
@@ -13,44 +14,67 @@ body {
 
 h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-family: "Comic Sans MS", sans-serif;
-    color: rgba(159,175,173,0.95)
+    color: rgba(234, 209, 19, 0.95);
+    animation-name: header;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+
+}
+
+#ok-btn {
+    font-family: "Avenir Next" , sans-serif;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 207px;
+    background-color: antiquewhite;
+    border-color: #6b7e63;
+    border-width: 2px;
+    border-style: solid;
 }
 
 button {
-    font-family: "Comic Sans MS", sans-serif;
-    border-radius: 10px;
-    background-color: antiquewhite;
-    border-color: antiquewhite;
-    border-style: none;
-}
-
-#message {
-    font-size: 12pt;
-    font-family: "Comic Sans MS", sans-serif;
-    color: rgba(51, 60, 60, 0.95);
-    flex: 1 1 auto;
-}
-
-.cats {
-    text-align: center;
+    font-family: "Avenir Next" , sans-serif;
+    border-radius: 15px;;
+    font-weight: bold;
     flex-wrap: wrap;
     align-content: center;
-    margin: 5px auto;
-    font-size: 12pt;
-    display: flex;
-    font-family: sans-serif;
-    width: 125px;
-    height: 200px;
-    border-radius: 25px;
-    background-size: contain;
-    align-items: center;
-    background-image: url('assets/cat.png');
+    width: 100px;
+    height: 30px;
+    background-color: rgba(113, 154, 95, 0.51);
+    border-color: #6b7e63;
+    border-width: 2px;
+    border-style: solid;
 }
 
+
+
+#message {
+    font-size: 14pt;
+    font-family: "Comic Sans MS", sans-serif;
+    color: rgb(41, 42, 69);
+    flex: 1 1 auto;
+
+}
+
+@keyframes header {
+    0% {color: rgba(175,22,9,0.95) }
+    20% {color: rgba(253, 122, 12, 0.95)}
+    40% {color: rgba(211, 170, 13, 0.95)}
+    60% {color: rgba(126, 193, 102, 0.95)}
+    80% {color: rgba(48, 114, 142, 0.95)}
+    100% {color: rgba(72, 28, 133, 0.95)
+    }
+
+}
+
+
+
 #message-box {
-    background: #78876f;
+    background: #8db1b5;
     text-align: center;
     flex-wrap: wrap;
     align-content: center;
@@ -58,14 +82,14 @@ button {
     font-size: 12pt;
     display: flex;
     font-family: sans-serif;
-    width: 300px;
+    width: 450px;
     border-radius: 25px;
 
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(3, 130px);
     gap: 10px;
     justify-content: center;
     margin: 20px auto;
@@ -73,7 +97,7 @@ button {
 
 .grid div {
     background: #799090;
-    height: 100px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;

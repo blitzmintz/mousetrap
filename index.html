@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <title>mouse cheese game</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,">
 </head>
-<body>
+<body id="body">
     <h2>mouse cheese</h2>
     <div id="message-box" class="message-box">
         <p id="message"></p>
     </div>
     <div class="player-control">
-        <button id="ok-btn">done!</button>
+        <button id="ok-btn" hidden>im done placing traps!</button>
+    </div>
+    <br>
+    <div class="control">
+        <button id="start-btn" disabled>start</button>
+        <button id="reset-btn" disabled>reset</button>
     </div>
 
     <div id="board" class="grid"></div>
-    <div class="control">
-        <button id="start-btn">start</button>
-        <button id="reset-btn">reset</button>
-    </div>
-
-    <div id="cat" class="cats"></div>
-
     <script src="index.js"></script>
 
 </body>
