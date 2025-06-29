@@ -6,10 +6,10 @@ body {
     width: auto;
     height: auto;
     background-image: url("assets/cat.png");
-
-    background-position: right;
     background-repeat: space;
-    background-size: 500px;
+    background-position-y: bottom;
+
+    background-size: 600px;
 }
 
 h2 {
@@ -34,17 +34,19 @@ h2 {
     border-color: #6b7e63;
     border-width: 2px;
     border-style: solid;
+    text-decoration-color: #192524;
 }
 
 button {
     font-family: "Avenir Next" , sans-serif;
-    border-radius: 15px;;
+    border-radius: 15px;
     font-weight: bold;
     flex-wrap: wrap;
     align-content: center;
     width: 100px;
     height: 30px;
     background-color: rgba(113, 154, 95, 0.51);
+    text-decoration-color: #192524;
     border-color: #6b7e63;
     border-width: 2px;
     border-style: solid;
@@ -82,7 +84,7 @@ button {
     font-size: 12pt;
     display: flex;
     font-family: sans-serif;
-    width: 450px;
+    width: 420px;
     border-radius: 25px;
 
 }
