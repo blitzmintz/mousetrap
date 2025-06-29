@@ -1,5 +1,5 @@
 body {
-    background-color: #192524;
+    background-color: #243135;
     text-align: center;
     font-family: sans-serif;
     margin: 0;
@@ -7,9 +7,7 @@ body {
     height: auto;
     background-image: url("assets/cat.png");
     background-repeat: space;
-    background-position-y: bottom;
-
-    background-size: 600px;
+    background-size: 500px;
 }
 
 h2 {
@@ -45,9 +43,9 @@ button {
     align-content: center;
     width: 100px;
     height: 30px;
-    background-color: rgba(113, 154, 95, 0.51);
+    background-color: rgb(162, 103, 163);
     text-decoration-color: #192524;
-    border-color: #6b7e63;
+    border-color: #f69d25;
     border-width: 2px;
     border-style: solid;
 }
