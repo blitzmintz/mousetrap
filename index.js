@@ -14,8 +14,8 @@ let trapList = [];
 let successCount = 0;
 let failCount = 0;
 
-const successSound = new Audio('../assets/ding-101492.mp3');
-const failSound = new Audio('../assets/wilhelm-splash-14579.mp3');
+const successSound = new Audio('/assets/ding-101492.mp3');
+const failSound = new Audio('/assets/wilhelm-splash-14579.mp3');
 
 
 for (let i = 0; i < 9; i++) {
